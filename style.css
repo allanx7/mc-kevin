@@ -445,6 +445,17 @@ main {
   transform: translateY(0);
 }
 
+.mc-kevin {
+  margin: 2rem auto;
+  display: block;
+  width: 650px;
+  border-radius: 12px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.33);
+}
+
+  
+
+
 @media (max-width: 980px) {
   .hero h2 {
     font-size: 6rem;
@@ -514,6 +525,12 @@ main {
 @media (max-width: 460px) {
   .hero h2 {
     font-size: 1.25rem;
+  }
+
+  .mc-kevin {
+    position: relative;
+    bottom: 39px;
+    width: 352px;
   }
 
   .hero-actions {
