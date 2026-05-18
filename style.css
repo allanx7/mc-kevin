@@ -332,7 +332,6 @@ iframe {
   position: absolute;
   inset: -14% -10%;
   z-index: -2;
-  background: radial-gradient(circle at 65% 18%, rgba(255, 0, 60, 0.33), transparent 42%);
   animation: pulse-red 8s ease-in-out infinite;
 }
 
@@ -425,7 +424,7 @@ iframe {
   color: #fff;
   border-color: rgba(153, 95, 109, 0.781);
   background: linear-gradient(90deg, rgba(241, 5, 60, 0.788), rgba(255, 54, 100, 0.48));
-  box-shadow: 0 12px 34px rgba(255, 0, 60, 0.33);
+
 }
 
 .btn-secondary {
