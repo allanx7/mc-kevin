@@ -3,18 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MC Kevin  O legado continua</title>
-  <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>MC Kevin | Mini Documentario Interativo</title>
+  <meta name="description" content="Homenagem cinematografica ao legado de MC Kevin com atmosfera noturna, intensidade urbana e memoria viva da quebrada.">
+  <meta name="keywords" content="MC Kevin, funk paulista, trap brasileiro, homenagem MC Kevin, legado MC Kevin">
+  <meta name="author" content="allan s">
+  <meta name="theme-color" content="#050507">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="MC Kevin | Mini Documentario Interativo">
+  <meta property="og:description" content="Intensidade, madrugada de Sao Paulo e memoria viva em uma experiencia cinematografica.">
+  <meta property="og:image" content="img/1_mc_kevin-6660996.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteudo</a>
+  <div class="mouse-glow" aria-hidden="true"></div>
+
   <header class="hero" id="inicio">
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" aria-label="Navegacao principal">
       <a class="logo" href="#inicio">mc kevin</a>
       <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu">
         <span></span>
@@ -26,30 +37,38 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         <li><a href="#hits">Hits</a></li>
         <li><a href="#historia">Historia</a></li>
         <li><a href="#frases">Frases</a></li>
+        <li><a href="#fotos">Fotos</a></li>
       </ul>
     </nav>
 
-<div class="link" aria-label="Redes sociais">
-     <ul class="niv">
-        <li><a class="github" href="https://github.com/allanx7" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+    <div class="link" aria-label="Redes sociais">
+      <ul class="niv">
 
-        <li><a class="youtube" href="https://youtube.com/@mckevinoficial?si=IH7AO9AXfvNA6St2" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a></li>
+        <li><a class="github" href="https://github.com/allanx7" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
 
-        <li><a class="instagram" href="https://www.instagram.com/mckevingomes/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+        <li><a class="youtube" href="https://youtube.com/@mckevinoficial?si=IH7AO9AXfvNA6St2" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
 
-        <li><a class="spotify" href="https://open.spotify.com/playlist/37i9dQZF1E8KQCPPzbO5zp?si=77576c77b4244f80" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></i></a></li>
-     </ul>
-</div>
+        <li><a class="instagram" href="https://www.instagram.com/mckevingomes/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
 
-    <video class="hero-video" autoplay muted loop playsinline>
+        <li><a class="spotify" href="https://open.spotify.com/playlist/37i9dQZF1E8KQCPPzbO5zp?si=77576c77b4244f80" target="_blank" rel="noopener noreferrer" aria-label="Spotify"><i class="fab fa-spotify"></i></a></li>
+
+      </ul>
+    </div>
+
+    <video class="hero-video" autoplay muted loop playsinline aria-label="Video de fundo com clipe do MC Kevin">
       <source src="img/mc-kevin%20video%20clip.mp4" type="video/mp4">
     </video>
 
-    <div class="hero-overlay"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
     <div class="hero-content reveal">
-      <p class="hero-tag">Vivendo intensamente.</p>
-      <h2>Kevin Nascimento <br> Bueno</h2>
-      <p class="hero-subtitle">O legado continua.</p>
+      <p class="hero-tag">Madrugada de Sao Paulo</p>
+      <h1>
+        <span>Kevin</span>
+        <span>Nascimento</span>
+        <span>Bueno</span>
+      </h1>
+      <p class="hero-subtitle">O legado continua no beat, na rua e na memoria.</p>
+      <p class="hero-credit">Quem acordou acordou esquece👋</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#historia">Ver Historia</a>
         <a class="btn btn-secondary" href="https://www.youtube.com/results?search_query=mc+kevin+hits" target="_blank" rel="noopener noreferrer">Escutar Hits</a>
@@ -57,11 +76,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     </div>
   </header>
 
-  <main>
-    <section class="section about reveal" id="sobre">
+  <main id="conteudo">
+    <section class="section about reveal" id="sobre" aria-labelledby="sobre-title">
       <div class="section-heading">
         <p class="kicker">Legado</p>
-        <h2>Sobre MC Kevin</h2>
+        <h2 id="sobre-title">Sobre MC Kevin</h2>
       </div>
       <p>
         MC Kevin marcou uma geracao com autenticidade, coragem e verdade.
@@ -70,10 +89,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       <p class="highlight">A favela venceu.</p>
     </section>
 
-    <section class="section hits" id="hits">
+    <section class="section hits" id="hits" aria-labelledby="hits-title">
       <div class="section-heading reveal">
         <p class="kicker">Discografia</p>
-        <h2>Hits Famosos</h2>
+        <h2 id="hits-title">Hits Famosos</h2>
       </div>
       <div class="hits-grid">
         <article class="glass-card reveal">
@@ -99,10 +118,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       </div>
     </section>
 
-    <section class="section timeline" id="historia">
+    <section class="cinematic-banner reveal" aria-label="Frase marcante e imagem cinematografica">
+      <img class="banner-image" src="img/show.jpg" alt="MC Kevin no palco durante show com publico vibrando" loading="lazy">
+      <div class="banner-overlay" aria-hidden="true"></div>
+      <div class="banner-content">
+        <p class="kicker">Manifesto</p>
+        <blockquote class="banner-quote">"O menino virou lenda porque viveu sem freio e sem mascara."</blockquote>
+      </div>
+    </section>
+
+    <section class="section timeline" id="historia" aria-labelledby="historia-title">
       <div class="section-heading reveal">
         <p class="kicker">Trajetoria</p>
-        <h2>Timeline da Carreira</h2>
+        <h2 id="historia-title">Timeline da Carreira</h2>
       </div>
       <ol class="timeline-list">
         <li class="reveal">
@@ -124,10 +152,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       </ol>
     </section>
 
-    <section class="section quotes" id="frases">
+    <section class="section quotes" id="frases" aria-labelledby="frases-title">
       <div class="section-heading reveal">
         <p class="kicker">Memoria</p>
-        <h2>Frases Marcantes</h2>
+        <h2 id="frases-title">Frases Marcantes</h2>
       </div>
       <div class="quotes-grid">
         <blockquote class="quote-card reveal">"Vivendo intensamente."</blockquote>
@@ -136,48 +164,58 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         <blockquote class="quote-card reveal">"Eternizado na musica."</blockquote>
       </div>
     </section>
-    <iframe class="mc-kevin" data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/59xgceM6ACWSn4vcdOzjJ0?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    <section class="section gallery" id="fotos">
+
+    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1IhbdsSCAiebyBbmmMxw96?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+    <section class="section gallery" id="fotos" aria-labelledby="fotos-title">
       <div class="section-heading reveal">
         <p class="kicker">Memoria visual</p>
-        <h2>Fotos MC Kevin</h2>
+        <h2 id="fotos-title">Fotos MC Kevin</h2>
       </div>
-      <div class="gallery-grid">
-        <figure class="photo-card photo-card--wide reveal">
-          <img src="img/1_mc_kevin-6660996.webp" alt="MC Kevin em retrato promocional">
-        </figure>
-        <figure class="photo-card reveal">
-          <img src="img/artista.jpg" alt="MC Kevin em foto artistica">
-        </figure>
-        <figure class="photo-card reveal">
-          <img src="img/piscina.jpg" alt="MC Kevin em momento de lazer">
-        </figure>
-        <figure class="photo-card reveal">
-          <img src="img/show.jpg" alt="MC Kevin em apresentacao de show">
-        </figure>
-        <figure class="photo-card photo-card--wide reveal">
-          <img src="img/passado.jpg" alt="Registro de memoria do artista">
-        </figure>
+      <div class="gallery-shell reveal">
+        <button class="gallery-control" type="button" data-gallery-nav="-1" aria-label="Ver foto anterior">
+          <span aria-hidden="true">&#10094;</span>
+        </button>
+        <div class="gallery-track" id="galleryTrack" tabindex="0" role="region" aria-label="Carrossel de fotos do MC Kevin">
+          <figure class="photo-slide is-active">
+            <img src="img/1_mc_kevin-6660996.webp" alt="Retrato promocional de MC Kevin em clima urbano noturno" loading="lazy">
+           
+          </figure>
+          <figure class="photo-slide">
+            <img src="img/artista.jpg" alt="MC Kevin em foto artistica com olhar intenso" loading="lazy">
+         
+          </figure>
+          <figure class="photo-slide">
+            <img src="img/piscina.jpg" alt="MC Kevin em momento de lazer e ostentacao" loading="lazy">
+          
+          </figure>
+          <figure class="photo-slide">
+            <img src="img/show.jpg" alt="MC Kevin no palco durante apresentacao de show" loading="lazy">
+      
+          </figure>
+          <figure class="photo-slide">
+            <img src="img/passado.jpg" alt="Registro de memoria de MC Kevin" loading="lazy">
+         
+          </figure>
+        </div>
+        <button class="gallery-control" type="button" data-gallery-nav="1" aria-label="Ver proxima foto">
+          <span aria-hidden="true">&#10095;</span>
+        </button>
+      </div>
+      <div class="gallery-meta reveal">
+        <div class="gallery-progress" aria-hidden="true">
+          <span></span>
+        </div>
+        <div class="gallery-dots" id="galleryDots" aria-label="Selecionar foto"></div>
+        <p class="gallery-hint">Role pros lados.</p>
       </div>
     </section>
   </main>
 
-  <!--<footer class="footer">
-    <p>MC KEVIN • Homenagem cinematografica</p>
-    <div class="social-links">
-      <a href="https://www.youtube.com/results?search_query=MC+Kevin" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-        <i data-lucide="youtube"></i>
-      </a>
-      <a href="https://www.instagram.com/mckevingomes/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <i data-lucide="instagram"></i>
-      </a>
-      <a href="https://github.com/allanx7" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <i data-lucide="github"></i>
-      </a>
-    </div>
-  </footer> -->
+  <footer class="final">
+    <p>&copy; allan s 2026.</p>
+  </footer>
 
-  <script src="https://unpkg.com/lucide@latest"></script>
   <script src="script.js"></script>
 </body>
 </html>
