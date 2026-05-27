@@ -123,6 +123,34 @@ iframe {
   background: radial-gradient(360px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 0, 60, 0.2), transparent 68%);
 }
 
+.icone {
+  width: clamp(40px, 6vw, 56px);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08), 0 14px 30px rgba(255, 0, 60, 0.16);
+  transform: translateY(0);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+  filter: saturate(1.12) contrast(1.05);
+  margin-right: 0.75rem;
+}
+
+.icone:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.16), 0 18px 38px rgba(255, 0, 60, 0.24);
+}
+
+.logo {
+  font-family: "Anton", Arial, sans-serif;
+  font-size: clamp(1.2rem, 4.5vw, 1.9rem);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text);
+  text-shadow: 0 0 18px rgba(255, 0, 60, 0.32);
+  margin-right: auto;
+}
 
 .navbar {
   position: fixed;
@@ -133,7 +161,8 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 0.85rem;
   padding: calc(0.9rem + env(safe-area-inset-top)) 1rem 0.8rem;
   border-bottom: 1px solid transparent;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.52), transparent);
@@ -148,16 +177,6 @@ iframe {
 
 .navbar.hide {
   transform: translateY(-110%);
-}
-
-.logo {
-  font-family: "Anton", Arial, sans-serif;
-  font-size: clamp(1.4rem, 3.5vw, 1.9rem);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--text);
-  text-shadow: 0 0 18px rgba(255, 0, 60, 0.32);
 }
 
 .menu-toggle {
@@ -241,38 +260,56 @@ iframe {
   z-index: 92;
 }
 
-.niv {
- 
-  margin: 0;
-  padding: 0.5rem 0.66rem;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 0.36rem;
-  border: 1px solid var(--line-soft);
-  border-radius: 999px;
-  background: rgba(6, 6, 12, 0.78);
-  backdrop-filter: blur(12px);
+iframe {
+  width: 425px;
+  height: 152px;
 }
 
-.niv a {
-  width: 31px;
-  height: 31px;
-  border-radius: 999px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: transform 0.2s ease, color 0.2s ease, text-shadow 0.2s ease;
+.iframe2 {
+     width: 372px;
+    height: 218px;
+}
+
+#iframediv {
+  border: 1px solid black;
+     width: 378px;
+    height: 199px;
+}
+
+.niv {
+    margin: 0;
+    padding: 0.4rem 0.85rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 999px;
+    background: rgba(6, 6, 12, 0.84);
+    backdrop-filter: blur(14px);
+  }
+
+  .niv a {
+    width: clamp(36px, 7vw, 48px);
+    height: clamp(36px, 7vw, 48px);
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: clamp(1rem, 2.2vw, 1.05rem);
+    background: transparent;
+    border: 1px solid transparent;
+    box-shadow: none;
+    transition: transform 0.18s ease, color 0.18s ease, text-shadow 0.18s ease, background-color 0.18s ease, border-color 0.18s ease;
 }
 
 .niv a.github {
-  color: rgba(255, 255, 255, 0.9);
+  color: #ffffff;
 }
 
 .niv a.youtube {
-  color: #ff2f45;
+  color: #ff001f;
 }
 
 .niv a.instagram {
@@ -284,7 +321,9 @@ iframe {
 }
 
 .niv a:hover {
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.04);
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .niv a.github:hover {
@@ -338,9 +377,7 @@ iframe {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(180deg, rgba(4, 4, 7, 0.45) 0%, rgba(4, 4, 7, 0.62) 30%, rgba(4, 4, 7, 0.93) 82%, rgba(3, 3, 4, 1) 100%),
-    radial-gradient(circle at 20% 85%, rgba(255, 0, 60, 0.16), transparent 50%);
+  
 }
 
 .hero-content {
@@ -644,28 +681,29 @@ main {
 }
 
 /* ===========================
-   7) BANNER GIGANTE
+   7) BANNER GIGANTE  
 =========================== */
 .cinematic-banner {
   position: relative;
-  min-height: clamp(420px, 70vh, 780px);
+  min-height: clamp(220px, 35vh, 420px);
   margin-top: 1.6rem;
   margin-bottom: 1.6rem;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  border: 1px solid rgba(255, 0, 60, 0.28);
+  border: 1px solid rgba(255, 0, 60, 0.22);
   box-shadow: var(--shadow-heavy);
   isolation: isolate;
 }
 
 .banner-image {
   position: absolute;
-  inset: -7% 0 0;
+  inset: 0;
   width: 100%;
-  height: 116%;
+  height: 100%;
   object-fit: cover;
-  transform: translate3d(0, var(--banner-shift, 0px), 0) scale(1.08);
-  filter: contrast(1.1) saturate(1.05);
+  background-size: cover;
+  transform: translate3d(0, var(--banner-shift, 0px), 0) scale(1.05);
+  filter: contrast(1.05) saturate(1.02);
 }
 
 .banner-overlay {
@@ -679,8 +717,8 @@ main {
 .banner-content {
   position: relative;
   z-index: 2;
-  min-height: clamp(420px, 70vh, 780px);
-  padding: clamp(1.2rem, 3vw, 2.6rem);
+  min-height: clamp(220px, 35vh, 420px);
+  padding: clamp(0.4rem, 3vw, 1rem);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -690,11 +728,11 @@ main {
   margin: 0;
   max-width: 900px;
   font-family: "Anton", Arial, sans-serif;
-  font-size: clamp(2rem, 6.7vw, 5.6rem);
-  line-height: 0.98;
-  letter-spacing: 1px;
+  font-size: clamp(1.4rem, 4.6vw, 3.2rem);
+  line-height: 1.02;
+  letter-spacing: 0.6px;
   text-transform: uppercase;
-  text-shadow: 0 10px 24px rgba(0, 0, 0, 0.54);
+  text-shadow: 0 8px 20px rgba(0, 0, 0, 0.48);
 }
 
 /* ===========================
@@ -1066,6 +1104,19 @@ RESPONSIVIDADE
     bottom: calc(0.8rem + env(safe-area-inset-bottom));
   }
 
+  .navbar {
+    gap: 0.75rem;
+    padding: calc(0.8rem + env(safe-area-inset-top)) 0.9rem 0.75rem;
+  }
+
+  .icone {
+    width: clamp(36px, 8vw, 44px);
+  }
+
+  .logo {
+    font-size: clamp(1.1rem, 5vw, 1.5rem);
+  }
+
   .hero {
     padding-top: 5.8rem;
   }
@@ -1099,7 +1150,7 @@ RESPONSIVIDADE
 
   .cinematic-banner,
   .banner-content {
-    min-height: 62vh;
+    min-height: 42vh;
   }
 
   .gallery-shell {
