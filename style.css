@@ -257,7 +257,7 @@ iframe {
   position: fixed;
   top: calc(4.15rem + env(safe-area-inset-top));
   right: 1rem;
-  z-index: 92;
+  z-index: 3;
 }
 
 iframe {
