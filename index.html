@@ -20,35 +20,6 @@
   <div class="mouse-glow" aria-hidden="true"></div>
 
   <header class="hero" id="inicio">
-    <nav class="navbar" id="navbar" aria-label="Navegacao principal">
-      <img class="icone" src="img/1_mc_kevin-6660996.webp" alt="...">
-      <a class="logo" href="#inicio">mc kevin</a>
-      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#hits">Hits</a></li>
-        <li><a href="#historia">Historia</a></li>
-        <li><a href="#frases">Frases</a></li>
-        <li><a href="#fotos">Fotos</a></li>
-      </ul>
-    </nav>
-
-    <div class="link" aria-label="Redes sociais">
-
-      <ul class="niv">
-        <li><a class="github" href="https://github.com/allanx7" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
-
-        <li><a class="youtube" href="https://youtube.com/@mckevinoficial?si=IH7AO9AXfvNA6St2" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
-
-        <li><a class="instagram" href="https://www.instagram.com/mckevingomes/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-
-        <li><a class="spotify" href="https://open.spotify.com/playlist/37i9dQZF1E8KQCPPzbO5zp?si=77576c77b4244f80" target="_blank" rel="noopener noreferrer" aria-label="Spotify"><i class="fab fa-spotify"></i></a></li>
-      </ul>
-    </div>
 
     <video class="hero-video" autoplay muted loop playsinline aria-label="Video de fundo com clipe do MC Kevin">
       <source src="img/mc-kevin%20video%20clip.mp4" type="video/mp4">
@@ -204,15 +175,67 @@
           <span></span>
         </div>
         <div class="gallery-dots" id="galleryDots" aria-label="Selecionar foto"></div>
-        <p class="gallery-hint">Role pros lados.</p>
+        
       </div>
     </section>
-    <div id="iframediv"><iframe class="iframe2" width="560" height="315" src="https://www.youtube.com/embed/GDNtSe_HC-8?si=01LGgqBpdLhmezvz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    <section class="section video-section" aria-label="Video MC Kevin">
+      <div class="section-heading reveal">
+        <p class="kicker">Clipe</p>
+      </div>
+      <div id="iframediv" class="reveal">
+        <iframe class="iframe2"
+          src="https://www.youtube.com/embed/GDNtSe_HC-8?si=01LGgqBpdLhmezvz"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
   </main>
 
 
   <footer class="final">
-    <p>&copy; allan s 2026.</p>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="footer-avatar" src="img/artworks-9EJVRveVULHKyOEx-XRSPnw-t500x500.jpg" alt="MC Kevin">
+        <div>
+          <span class="footer-name">MC Kevin</span>
+          <span class="footer-tag">O menino que virou lenda</span>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Links de navegacao">
+        <a href="#sobre">Sobre</a>
+        <a href="#hits">Hits</a>
+        <a href="#historia">Historia</a>
+        <a href="#frases">Frases</a>
+        <a href="#fotos">Fotos</a>
+      </nav>
+
+      <div class="footer-socials" aria-label="Redes sociais">
+        <a class="social-btn github" href="https://github.com/allanx7" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a class="social-btn youtube" href="https://youtube.com/@mckevinoficial?si=IH7AO9AXfvNA6St2" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+          <span>YouTube</span>
+        </a>
+        <a class="social-btn instagram" href="https://www.instagram.com/mckevingomes/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+        <a class="social-btn spotify" href="https://open.spotify.com/playlist/37i9dQZF1E8KQCPPzbO5zp?si=77576c77b4244f80" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+          <i class="fab fa-spotify"></i>
+          <span>Spotify</span>
+        </a>
+      </div>
+
+      <div class="footer-divider"></div>
+      <p class="footer-copy">&copy; 2026 Allan S.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
