@@ -316,7 +316,7 @@ iframe {
 
 .hero h1 {
   margin: 0.45rem 0 0;
-  font-family: "Anton", Arial, sans-serif;
+ 
   font-size: clamp(3.2rem, 11.6vw, 9.6rem);
   line-height: 0.86;
   text-transform: uppercase;
@@ -644,8 +644,7 @@ main {
 .banner-quote {
   margin: 0;
   max-width: 900px;
-  font-family: "Anton", Arial, sans-serif;
-  font-size: clamp(1.4rem, 4.6vw, 3.2rem);
+  font-size: clamp(1.4rem, 1.6vw, 3.2rem);
   line-height: 1.02;
   letter-spacing: 0.6px;
   text-transform: uppercase;
@@ -953,7 +952,7 @@ main {
 
 .footer-name {
   display: block;
-  font-family: "Anton", Arial, sans-serif;
+  font-family: cursive, Arial, sans-serif;
   font-size: 1.25rem;
   letter-spacing: 2px;
   text-transform: uppercase;
