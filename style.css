@@ -941,8 +941,8 @@ main {
 }
 
 .footer-avatar {
-  width: 52px;
-  height: 52px;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid rgba(255, 0, 60, 0.5);
