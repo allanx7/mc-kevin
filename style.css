@@ -987,7 +987,9 @@ a {
   position: absolute;
   inset: 0.75rem;
   pointer-events: none;
-  background: linear-gradient(180deg, transparent 40%, rgba(5, 5, 5, 0.85) 95%);
+  /* softer vignette so images remain legible */
+  background: linear-gradient(180deg, transparent 70%, rgba(0, 0, 0, 0.28) 100%);
+  mix-blend-mode: multiply;
 }
 
 .spotlight-info {
@@ -1018,6 +1020,16 @@ a {
   margin: 0;
   line-height: 1.4;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Remove textual overlays in the album spotlight so only photos remain */
+#album .spotlight-info {
+  display: none !important;
+}
+
+/* Hide thumbnail decorative labels/borders inside album grid */
+#album .thumb-border {
+  display: none !important;
 }
 
 /* Thumbnail Grid */
