@@ -3,233 +3,564 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MC Kevin</title>
-  <meta name="description" content="Homenagem cinematográfica ao legado de MC Kevin, com atmosfera noturna, intensidade urbana e memória viva da quebrada.">
-  <meta name="keywords" content="MC Kevin, funk paulista, trap brasileiro, homenagem MC Kevin, legado MC Kevin">
+  <title>MC Kevin — O Menino Que Virou Lenda</title>
+  <meta name="description" content="Homenagem cinematográfica e biográfica ao legado de MC Kevin, com atmosfera noturna, intensidade urbana e memória viva da quebrada de São Paulo.">
+  <meta name="keywords" content="MC Kevin, Kevin Nascimento Bueno, funk paulista, trap brasileiro, homenagem MC Kevin, legado MC Kevin">
   <link rel="icon" href="img/copao.jpg" type="image/x-icon">
-
-  <link rel="shortcut icon" href="img/dc2839c74d784eb7b0cf0a2ea4a47fda.avif" type="image/x-icon">
+  <link rel="shortcut icon" href="img/copao.jpg" type="image/x-icon">
+  
+  <!-- Fonts: Playfair Display (editorial headings & quotes), Outfit (structured headings & metadata), Inter (body text) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;700;800;900&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-  <div class="mouse-glow" aria-hidden="true"></div>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
 
+  <!-- Header / Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="#inicio" class="navbar-logo">
+        <span class="logo-first">KEVIN</span>
+        <span class="logo-last">N. BUENO</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#sobre">Biografia</a>
+        <a href="#momentos">Capítulos</a>
+        <a href="#destaque">Manifesto</a>
+        <a href="#trajetoria">Trajetória</a>
+        <a href="#legado">Legado</a>
+        <a href="#album">Memórias</a>
+        <a href="#conquistas">Conquistas</a>
+        <a href="#hits">Música</a>
+        <a href="#clipe">Registro</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section (Cinema Opening) -->
   <header class="hero" id="inicio">
-
-    <video class="hero-video" autoplay muted loop playsinline aria-label="Video de fundo com clipe do MC Kevin">
+    <video class="hero-video" autoplay muted loop playsinline aria-label="Vídeo de fundo do clipe do MC Kevin">
       <source src="img/mc-kevin%20video%20clip.mp4" type="video/mp4">
     </video>
-
-    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-overlay"></div>
+    
     <div class="hero-content reveal">
-      <p class="hero-tag">Madrugada de São Paulo</p>
-      <h1>
-        <span>Kevin</span>
-        <span>Nascimento</span>
-        <span>Bueno</span>
+      <div class="hero-meta-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text">Memória & Legado</span>
+      </div>
+      
+      <h1 class="hero-title">
+        <span class="hero-name-first">KEVIN</span>
+        <span class="hero-name-middle">Nascimento</span>
+        <span class="hero-name-last">Bueno</span>
       </h1>
-      <p class="hero-subtitle">O legado segue no beat, na rua e na memória.</p>
-      <p class="hero-credit">Quem conhece não esquece 👋</p>
+      
+      <div class="hero-divider-group">
+        <span class="hero-date">1998</span>
+        <span class="hero-connector"></span>
+        <span class="hero-date">2021</span>
+      </div>
+      
+      <p class="hero-subtitle">O menino que encantou a quebrada, viveu sem freio e se eternizou na história da música urbana.</p>
+      
       <div class="hero-actions">
-<!--<a class="btn btn-primary" href="#historia">Ver História<a>
-        <a class="btn btn-secondary" href="https://www.youtube.com/results?search_query=mc+kevin+hits" target="_blank" rel="noopener noreferrer">Escutar Hits</a> -->
+        <a class="btn btn-primary" href="#sobre">Conhecer História</a>
+        <a class="btn btn-secondary" href="https://www.youtube.com/results?search_query=mc+kevin+hits" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-youtube icon-btn"></i> Ouvir Hits
+        </a>
       </div>
     </div>
   </header>
 
+  <!-- Main Content Container -->
   <main id="conteudo">
-    <section class="section about reveal" id="sobre" aria-labelledby="sobre-title">
-      <div class="section-heading">
-        <p class="kicker">Legado</p>
-        <h2 id="sobre-title">Sobre MC Kevin</h2>
+
+    <!-- Section 1: Biografia Editorial (Sobre) -->
+    <section class="section about" id="sobre" aria-labelledby="sobre-title">
+      <div class="editorial-grid">
+        <div class="editorial-media reveal">
+          <div class="frame-container">
+            <img src="img/artista.jpg" alt="MC Kevin em um retrato artístico com olhar reflexivo e intenso" class="editorial-img">
+            <div class="img-caption">
+              <span class="caption-line"></span>
+              <span class="caption-text">São Paulo, Brasil — A voz da quebrada em sua essência.</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="editorial-text reveal">
+          <span class="section-kicker">A Voz da Quebrada</span>
+          <h2 id="sobre-title" class="section-title">O Menino do Recanto</h2>
+          <p class="lead-text">
+            Nascido na Vila Maria, zona norte de São Paulo, Kevin Nascimento Bueno não foi apenas um cantor; ele foi a voz pulsante de uma geração que encontrou na sua música a expressão máxima de liberdade, realidade e triunfo.
+          </p>
+          <p>
+            Com seu carisma eletrizante e uma entrega visceral aos palcos, Kevin cantou as vivências cotidianas, os sonhos e as superações da periferia. Ele viveu intensamente cada segundo, quebrando as barreiras do preconceito e provando que a arte das ruas possui um valor grandioso e transformador.
+          </p>
+          <p>
+            Sua passagem foi rápida, mas o impacto deixado na música urbana brasileira é eterno. Ao cantar com o coração limpo de filtros e cheio de verdades, MC Kevin transcendeu o funk para se tornar um ícone cultural da juventude de São Paulo.
+          </p>
+          <div class="editorial-quote-inline">
+            <p>"A favela não é só tristeza. A favela venceu, e nós mostramos que é possível alcançar o topo sem esquecer de onde viemos."</p>
+          </div>
+        </div>
       </div>
-      <p>
-        MC Kevin deixou uma marca profunda no funk paulista. Sua voz trouxe a realidade da periferia para todo o Brasil, transformando histórias em música e mantendo viva a memória da quebrada.
-      </p>
-      <p class="highlight">A favela venceu.</p>
     </section>
 
+    <!-- Section 2: Momentos Marcantes -->
+    <section class="section moments" id="momentos" aria-labelledby="momentos-title">
+      <div class="section-heading reveal">
+        <span class="section-kicker">História</span>
+        <h2 id="momentos-title" class="section-title">Momentos Marcantes</h2>
+      </div>
+      
+      <div class="moments-grid">
+        <article class="moment-card reveal">
+          <div class="moment-header">
+            <span class="moment-num">01</span>
+            <span class="moment-dot"></span>
+          </div>
+          <h3 class="moment-title">Raízes na Vila Maria</h3>
+           <p class="moment-desc">Entre as vielas e as quadras da Zona Norte de São Paulo, Kevin iniciou sua relação com o funk. Escrevia crônicas reais sobre a sua realidade e a vontade de dar uma vida digna para sua família.</p>
+        </article>
+
+        <article class="moment-card reveal">
+          <div class="moment-header">
+            <span class="moment-num">02</span>
+            <span class="moment-dot"></span>
+          </div>
+          <h3 class="moment-title">Reconhecimento Nacional</h3>
+          <p class="moment-desc">A autenticidade de Kevin e seu flow dinâmico conquistaram o público. Em pouco tempo, suas faixas ultrapassaram as fronteiras do estado, tornando-se hits cantados de norte a sul do Brasil.</p>
+        </article>
+
+        <article class="moment-card reveal">
+          <div class="moment-header">
+            <span class="moment-num">03</span>
+            <span class="moment-dot"></span>
+          </div>
+          <h3 class="moment-title">Grandes Sucessos</h3>
+          <p class="moment-desc">Canções como "Cavalo de Troia", "Pra Inveja é Tchau" e "O Menino Encantou a Quebrada" viraram trilha sonora da vida de milhões de jovens, alcançando números astronômicos e marcando gerações.</p>
+        </article>
+
+        <article class="moment-card reveal">
+          <div class="moment-header">
+            <span class="moment-num">04</span>
+            <span class="moment-dot"></span>
+          </div>
+          <h3 class="moment-title">Legado Inabalável</h3>
+          <p class="moment-desc">Sua influência vai além da música. Kevin moldou gírias, vestuários, comportamentos e inspirou milhares de novos talentos a acreditarem na própria voz e no poder da superação.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section 3: Frase de Destaque Monumental -->
+    <section class="section-cinematic-quote" id="destaque" aria-label="Frase em Destaque">
+      <div class="quote-bg-image" style="background-image: url('img/coringa.jpg');"></div>
+      <div class="quote-overlay"></div>
+      <div class="quote-content reveal">
+        <span class="quote-mark">“</span>
+        <blockquote class="giant-quote">
+          O menino virou lenda porque viveu sem freio e sem máscara.
+        </blockquote>
+        <cite class="quote-author">— MEMÓRIA VIVA</cite>
+      </div>
+    </section>
+
+    <!-- Section 4: Timeline Premium (Trajetória) -->
+    <section class="section timeline-section" id="trajetoria" aria-labelledby="timeline-title">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Trajetória</span>
+        <h2 id="timeline-title" class="section-title">A Linha do Tempo</h2>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+        
+        <div class="timeline-item left reveal">
+          <div class="timeline-year">1998</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <h3>O Início de Tudo</h3>
+            </div>
+            <p>Em 29 de abril de 1998, nasce Kevin Nascimento Bueno na capital paulista. Uma infância humilde e repleta de sonhos nas ruas da Zona Norte.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right reveal">
+          <div class="timeline-year">2013</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <h3>A Descoberta do Funk</h3>
+            </div>
+            <p>Kevin começa a dar seus primeiros passos sérios na música, lançando faixas piloto e gravando com produtoras independentes de São Paulo.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item left reveal">
+          <div class="timeline-year">2018</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <h3>Estouro Nacional</h3>
+            </div>
+            <p>Consolidação do artista no cenário brasileiro do funk paulista. Sucessos massivos tomam conta das redes e plataformas de streaming.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right reveal">
+          <div class="timeline-year">2020</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <h3>O Ápice e a Maturidade</h3>
+            </div>
+            <p>Kevin assume controle total de sua carreira, lança canções que misturam funk e trap e expande suas parcerias com grandes nomes da música urbana.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item left reveal">
+          <div class="timeline-year">Eterno</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card highlight-card">
+            <div class="timeline-card-header">
+              <h3>Eternizado na Música</h3>
+            </div>
+            <p>O menino virou lenda. Sua partida precoce uniu o país em luto, mas seu espírito livre e suas canções seguem ecoando diariamente por toda parte.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Legado Cultural -->
+    <section class="section legacy" id="legado" aria-labelledby="legado-title">
+      <div class="legacy-grid">
+        <div class="legacy-text reveal">
+          <span class="section-kicker">Impacto</span>
+          <h2 id="legado-title" class="section-title">O Impacto Cultural e Artístico</h2>
+          <p>
+            MC Kevin redefiniu as regras do funk. Sua música combinava a ostentação como conquista do suor de quem veio de baixo com reflexões profundas sobre as batalhas internas e o peso do sucesso rápido. Ele trouxe ao funk uma estética autêntica, misturando a cultura das motos, carros esportivos e os bailes com uma lealdade inabalável às suas origens.
+          </p>
+          <p>
+            Sua atitude rebelde e cativante ensinou uma geração a não ter vergonha de sua própria essência. Ele provou que o artista periférico merece os maiores palcos, inspirando novos artistas que hoje dominam os charts do funk e do rap nacional.
+          </p>
+        </div>
+        
+        <div class="legacy-stats-container reveal">
+          <div class="stat-card">
+            <div class="stat-num">10M+</div>
+            <div class="stat-desc">Ouvintes nas plataformas digitais mantêm sua obra no topo.</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">ZN</div>
+            <div class="stat-desc">Inspiração eterna para as quadras e quebradas de toda São Paulo.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Álbum de Memórias (Galeria Documental) -->
+    <section class="section album-section" id="album" aria-labelledby="album-title">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Álbum de Memórias</span>
+        <h2 id="album-title" class="section-title">Retratos de uma Vida</h2>
+      </div>
+
+      <div class="album-container reveal">
+        <!-- Spotlight Frame (Large Main Image) -->
+        <div class="album-spotlight">
+          <div class="spotlight-frame">
+            <img id="spotlightImage" src="img/1_mc_kevin-6660996.webp" alt="MC Kevin em retrato promocional noturno">
+            <div class="spotlight-vignette"></div>
+            <div class="spotlight-info">
+              <span id="spotlightTag" class="spotlight-tag">Estilo Urbano</span>
+              <h3 id="spotlightCaption" class="spotlight-caption">Retrato promocional de MC Kevin em clima urbano noturno</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Thumbnails -->
+        <div class="album-grid">
+          <button class="album-thumb active" type="button" 
+                  data-img="img/1_mc_kevin-6660996.webp" 
+                  data-tag="Estilo Urbano" 
+                  data-caption="Retrato promocional de MC Kevin em clima urbano noturno"
+                  aria-label="Ver imagem 1: Estilo Urbano">
+            <img src="img/1_mc_kevin-6660996.webp" alt="MC Kevin Noturno">
+            <span class="thumb-border"></span>
+          </button>
+          
+          <button class="album-thumb" type="button" 
+                  data-img="img/artista.jpg" 
+                  data-tag="Essência Artística" 
+                  data-caption="MC Kevin em foto artística com olhar intenso em estúdio"
+                  aria-label="Ver imagem 2: Essência Artística">
+            <img src="img/artista.jpg" alt="MC Kevin Estúdio">
+            <span class="thumb-border"></span>
+          </button>
+
+          <button class="album-thumb" type="button" 
+                  data-img="img/Kevin.webp" 
+                  data-tag="Carisma Único" 
+                  data-caption="MC Kevin em momento descontraído mostrando seu sorriso marcante"
+                  aria-label="Ver imagem 3: Carisma Único">
+            <img src="img/Kevin.webp" alt="MC Kevin Lazer">
+            <span class="thumb-border"></span>
+          </button>
+
+          <button class="album-thumb" type="button" 
+                  data-img="img/palma.jpg" 
+                  data-tag="Energia do Palco" 
+                  data-caption="MC Kevin no palco durante apresentação de show em alta sintonia com o público"
+                  aria-label="Ver imagem 4: Energia do Palco">
+            <img src="img/palma.jpg" alt="MC Kevin no Palco">
+            <span class="thumb-border"></span>
+          </button>
+
+          <button class="album-thumb" type="button" 
+                  data-img="img/evoque.jpg" 
+                  data-tag="Conquistas" 
+                  data-caption="O menino da ZN conquistando o asfalto e inspirando o progresso da favela"
+                  aria-label="Ver imagem 5: Conquistas">
+            <img src="img/evoque.jpg" alt="MC Kevin e Evoque">
+            <span class="thumb-border"></span>
+          </button>
+
+          <button class="album-thumb" type="button" 
+                  data-img="img/passado.jpg" 
+                  data-tag="Raízes" 
+                  data-caption="Registro de infância de Kevin Nascimento Bueno, o início de todo o sonho"
+                  aria-label="Ver imagem 6: Raízes">
+            <img src="img/passado.jpg" alt="MC Kevin Infância">
+            <span class="thumb-border"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Discografia & Hits Famosos -->
     <section class="section hits" id="hits" aria-labelledby="hits-title">
       <div class="section-heading reveal">
-        <p class="kicker">Discografia</p>
-        <h2 id="hits-title">Hits Famosos</h2>
+        <span class="section-kicker">Som das Ruas</span>
+        <h2 id="hits-title" class="section-title">Discografia & Hits</h2>
       </div>
-      <div class="hits-grid">
-        <article class="glass-card reveal">
-          <span class="track-year">2020</span>
-          <h3>Cavalo de Troia</h3>
-          <p>Som de rua com energia de estádio e assinatura inconfundível.</p>
-        </article>
-        <article class="glass-card reveal">
-          <span class="track-year">2020</span>
-          <h3>Pra Inveja e Tchau</h3>
-          <p>Flow direto, letra marcante e atmosfera de superação.</p>
-        </article>
-        <article class="glass-card reveal">
-          <span class="track-year">2019</span>
-          <h3>Veracruz</h3>
-          <p>Batida envolvente que virou trilha de uma fase inteira.</p>
-        </article>
-        <article class="glass-card reveal">
-          <span class="track-year">2021</span>
-          <h3>O Menino Encantou a Quebrada</h3>
-          <p>Um retrato da conexão entre talento, origem e identidade.</p>
-        </article>
+
+      <div class="discography-layout">
+        <!-- Left: Custom Interactive Audio Player Widget -->
+        <div class="player-card reveal">
+          <div class="player-cover-area">
+            <div class="player-disc" id="playerDisc">
+              <img id="playerCover" src="img/artista.jpg" alt="Capa - Cavalo de Troia">
+              <div class="disc-center"></div>
+            </div>
+            <!-- Bouncing visualizer bars -->
+            <div class="player-visualizer" id="playerVisualizer">
+              <span class="v-bar"></span>
+              <span class="v-bar"></span>
+              <span class="v-bar"></span>
+              <span class="v-bar"></span>
+              <span class="v-bar"></span>
+              <span class="v-bar"></span>
+              <span class="v-bar"></span>
+              <span class="v-bar"></span>
+              <span class="v-bar"></span>
+              <span class="v-bar"></span>
+            </div>
+          </div>
+
+          <div class="player-track-info">
+            <span id="playerTrackYear" class="player-track-year">2020</span>
+            <h3 id="playerTrackTitle" class="player-track-title">Cavalo de Troia</h3>
+            <p id="playerTrackArtist" class="player-track-artist">MC Kevin</p>
+          </div>
+
+          <!-- Progress Bar Slider -->
+          <div class="player-progress-group">
+            <span id="currentTime" class="time-label">0:00</span>
+            <div class="progress-bar-container" id="progressBarContainer">
+              <div class="progress-bar-fill" id="progressBarFill"></div>
+              <div class="progress-bar-handle" id="progressBarHandle"></div>
+            </div>
+            <span id="durationTime" class="time-label">3:18</span>
+          </div>
+
+          <!-- Controls -->
+          <div class="player-controls">
+            <button class="control-btn secondary-control" id="prevBtn" aria-label="Faixa anterior">
+              <i class="fa-solid fa-backward-step"></i>
+            </button>
+            <button class="control-btn primary-control" id="playBtn" aria-label="Tocar">
+              <i class="fa-solid fa-play" id="playIcon"></i>
+            </button>
+            <button class="control-btn secondary-control" id="nextBtn" aria-label="Próxima faixa">
+              <i class="fa-solid fa-forward-step"></i>
+            </button>
+          </div>
+
+          <div class="player-audio-note" id="playerAudioNote">
+            <i class="fa-solid fa-circle-info"></i> Clique em uma música para tocar o MP3 local.
+          </div>
+          <audio id="playerAudio" preload="metadata"></audio>
+        </div>
+
+        <!-- Right: Modern structured Hits List with Custom Play Buttons -->
+        <div class="hits-grid" id="hitsGrid">
+          <article class="hit-item reveal active" data-index="0" data-title="Cavalo de Troia" data-year="2020" data-img="img/cavalo.jpg" data-duration="3:18" data-src="sons/mc-kevin-cavalo-de-troia.mp3">
+            <span class="hit-year">2020</span>
+            <div class="hit-info">
+              <h3 class="hit-title">Cavalo de Troia</h3>
+              <p class="hit-desc">Hino icônico com energia incomparável e letra que virou manifesto nas ruas.</p>
+            </div>
+            <button class="hit-play-btn" aria-label="Tocar Cavalo de Troia">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </article>
+
+          <article class="hit-item reveal" data-index="1" data-title="Pra Inveja e Tchau" data-year="2020" data-img="img/inveja.jpg" data-duration="2:45" data-src="sons/mc-kevin-e-mc-davi-pra-inveja-e-tchau.mp3">
+            <span class="hit-year">2020</span>
+            <div class="hit-info">
+              <h3 class="hit-title">Pra Inveja e Tchau</h3>
+              <p class="hit-desc">Letra emblemática sobre progresso, amizade real e proteção contra as adversidades.</p>
+            </div>
+            <button class="hit-play-btn" aria-label="Tocar Pra Inveja e Tchau">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </article>
+
+          <article class="hit-item reveal" data-index="2" data-title="Veracruz" data-year="2019" data-img="img/vera.jpg" data-duration="3:04" data-src="sons/MC Kevin - Veracruz (KondZilla)(MP3_160K).mp3">
+            <span class="hit-year">2019</span>
+            <div class="hit-info">
+              <h3 class="hit-title">Veracruz</h3>
+              <p class="hit-desc">Batida inesquecível e um flow que dominou os bailes e playlists em todo o Brasil.</p>
+            </div>
+            <button class="hit-play-btn" aria-label="Tocar Veracruz">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </article>
+
+          <article class="hit-item reveal" data-index="3" data-title="O Menino Encantou a Quebrada" data-year="2021" data-img="img/quebrada.jpg" data-duration="3:22" data-src="sons/mc-kevin-o-menino-encantou-a-quebrada.mp3">
+            <span class="hit-year">2021</span>
+            <div class="hit-info">
+              <h3 class="hit-title">O Menino Encantou a Quebrada</h3>
+              <p class="hit-desc">A autobiografia cantada em forma de ritmo e poesia. A síntese da sua trajetória.</p>
+            </div>
+            <button class="hit-play-btn" aria-label="Tocar O Menino Encantou a Quebrada">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="cinematic-banner reveal" aria-label="Frase marcante e imagem cinematográfica">
-      <img class="banner-image" src="img/coringa.jpg" alt="MC Kevin no palco durante show com publico vibrando" loading="lazy">
-
-      <div class="banner-overlay" aria-hidden="true"></div>
-      <div class="banner-content">
-        <p class="kicker">Manifesto</p>
-        <blockquote class="banner-quote">"O menino virou lenda porque viveu sem freio e sem máscara."</blockquote>
-      </div>
-    </section>
-
-    <section class="section timeline" id="historia" aria-labelledby="historia-title">
+    <!-- Section 8: Conquistas & Seguidores -->
+    <section class="section achievements" id="conquistas" aria-labelledby="conquistas-title">
       <div class="section-heading reveal">
-        <p class="kicker">Trajetória</p>
-        <h2 id="historia-title">Timeline da Carreira</h2>
+  
+        <h2 id="conquistas-title" class="section-title">sua Marca</h2>
       </div>
-      <ol class="timeline-list">
-        <li class="reveal">
-          <span class="time">2013</span>
-          <p>Primeiros passos no funk e início da construção de um estilo próprio.</p>
-        </li>
-        <li class="reveal">
-          <span class="time">2018</span>
-          <p>Reconhecimento nacional e crescimento explosivo em plataformas e shows.</p>
-        </li>
-        <li class="reveal">
-          <span class="time">2020</span>
-          <p>Consolidação artística com hits que dominaram playlists e bailes.</p>
-        </li>
-        <li class="reveal">
-          <span class="time">Eterno</span>
-          <p>O menino virou lenda. Eternizado na música.</p>
-        </li>
-      </ol>
-    </section>
 
-    <section class="section quotes" id="frases" aria-labelledby="frases-title">
-      <div class="section-heading reveal">
-      <!--  <p class="kicker">Memória</p> -->
-        <h2 id="frases-title">Frases Marcantes</h2>
-      </div>
-      <div class="quotes-grid">
-        <blockquote class="quote-card reveal">"Vivendo intensamente."</blockquote>
-        <blockquote class="quote-card reveal">"A favela venceu."</blockquote>
-        <blockquote class="quote-card reveal">"O menino virou lenda."</blockquote>
-        <blockquote class="quote-card reveal">"Eternizado na música."</blockquote>
+      <div class="achievements-grid reveal">
+        <article class="achievement-card reveal red-card">
+          <span class="achievement-value">2,3M</span>
+          <span class="achievement-key">Seguidores</span>
+          <p class="achievement-desc">Fãs conectados ao legado de Kevin nas redes sociais e playlists.</p>
+        </article>
+
+        <article class="achievement-card reveal blue-card">
+          <span class="achievement-value">1,5B</span>
+          <span class="achievement-key">Streams</span>
+          <p class="achievement-desc">Reproduções massivas que transformaram cada hit em fenômeno viral.</p>
+        </article>
+
+        <article class="achievement-card reveal green-card">
+          <span class="achievement-value">450M</span>
+          <span class="achievement-key">Views</span>
+          <p class="achievement-desc">Visualizações acumuladas nos videoclipes e conteúdos oficiais.</p>
+        </article>
+
+        <article class="achievement-card reveal gold-card">
+          <span class="achievement-value">120+</span>
+          <span class="achievement-key">Shows</span>
+          <p class="achievement-desc">Apresentações e participações em eventos que levaram a quebrada ao topo.</p>
+        </article>
       </div>
     </section>
 
-    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4BedjJsVJvrmSnVr8rLcSU?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    
-    <section class="section gallery" id="fotos" aria-labelledby="fotos-title">
+    <!-- Section 9: Clipe (Registro Audiovisual) -->
+    <section class="section video-section" id="clipe" aria-labelledby="video-title">
       <div class="section-heading reveal">
-      <!--  <p class="kicker">Memória visual</p> -->
-        <h2 id="fotos-title">Fotos MC Kevin</h2>
+        <span class="section-kicker">Audiovisual</span>
+        <h2 id="video-title" class="section-title">Registro Audiovisual</h2>
       </div>
-      <div class="gallery-shell reveal">
-        <button class="gallery-control" type="button" data-gallery-nav="-1" aria-label="Ver foto anterior">
-          <span aria-hidden="true">&#10094;</span>
-        </button>
-        <div class="gallery-track" id="galleryTrack" tabindex="0" role="region" aria-label="Carrossel de fotos do MC Kevin">
-          <figure class="photo-slide is-active">
-            <img src="img/1_mc_kevin-6660996.webp" alt="Retrato promocional de MC Kevin em clima urbano noturno" loading="lazy">
-           
-          </figure>
-          <figure class="photo-slide">
-            <img src="img/artista.jpg" alt="MC Kevin em foto artistica com olhar intenso" loading="lazy">
-         
-          </figure>
-          <figure class="photo-slide">
-            <img src="img/Kevin.webp" alt="MC Kevin em momento de lazer e ostentacao" loading="lazy" >
-          
-          </figure>
-          <figure class="photo-slide">
-            <img src="img/palma.jpg" alt="MC Kevin no palco durante apresentacao de show" loading="lazy">
       
-          </figure>
-          <figure class="photo-slide">
-            <img src="img/evoque.jpg" alt="Registro de memória de MC Kevin" loading="lazy">
-          </figure>
-           </figure>
-          <figure class="photo-slide">
-            <img src="img/copao.jpg" alt="Registro de memória de MC Kevin" loading="lazy">
-          </figure>
-        </div>
-        <button class="gallery-control" type="button" data-gallery-nav="1" aria-label="Ver próxima foto">
-          <span aria-hidden="true">&#10095;</span>
-        </button>
-      </div>
-      <div class="gallery-meta reveal">
-        <div class="gallery-progress" aria-hidden="true">
-          <span></span>
-        </div>
-        <div class="gallery-dots" id="galleryDots" aria-label="Selecionar foto"></div>
-        
-      </div>
-    </section>
-    <section class="section video-section" aria-label="Video MC Kevin">
-      <div class="section-heading reveal">
-        <p class="kicker">Clipe</p>
-      </div>
       <div id="iframediv" class="reveal">
-       <iframe class="iframe2"  src="https://www.youtube.com/embed/9zfzZI565iA?si=XsueVF1BrG29hLer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="iframe2" src="https://www.youtube.com/embed/9zfzZI565iA?si=XsueVF1BrG29hLer" title="YouTube video player - MC Kevin" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </section>
+
   </main>
 
-
+  <!-- Premium Footer -->
   <footer class="final">
     <div class="footer-inner">
       <div class="footer-brand">
-        <img class="footer-avatar" src="img/copao.jpg" alt="MC Kevin">
-        <div>
-          <span class="footer-name"> Kevin bueno</span>
+        <img class="footer-avatar" src="img/copao.jpg" alt="MC Kevin avatar">
+        <div class="footer-brand-info">
+          <span class="footer-name">Kevin Bueno</span>
           <span class="footer-tag">O menino que virou lenda</span>
         </div>
       </div>
 
-      <nav class="footer-nav" aria-label="Links de navegação">
-        <a href="#sobre">Sobre</a>
-        <a href="#hits">Hits</a>
-        <a href="#historia">História</a>
-        <a href="#frases">Frases</a>
-        <a href="#fotos">Fotos</a>
+      <nav class="footer-nav" aria-label="Links do rodapé">
+        <a href="#sobre">Biografia</a>
+        <a href="#momentos">Capítulos</a>
+        <a href="#trajetoria">Trajetória</a>
+        <a href="#album">Memórias</a>
+        <a href="#conquistas">Conquistas</a>
+        <a href="#hits">Músicas</a>
       </nav>
 
-      <div class="footer-socials" aria-label="Redes sociais">
-        <a class="social-btn github" href="https://github.com/allanx7" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <div class="footer-socials" aria-label="Links sociais">
+        <a class="social-btn github" href="https://github.com/allanx7" target="_blank" rel="noopener noreferrer" aria-label="GitHub do desenvolvedor">
           <i class="fab fa-github"></i>
           <span>GitHub</span>
         </a>
-        <a class="social-btn youtube" href="https://youtube.com/@mckevinoficial?si=IH7AO9AXfvNA6St2" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+        <a class="social-btn gmail" href="mailto:contato@mckevingomes.com" target="_blank" rel="noopener noreferrer" aria-label="Enviar e-mail">
+          <i class="fa-solid fa-envelope"></i>
+          <span>E-mail</span>
+        </a>
+        <a class="social-btn youtube" href="https://youtube.com/@mckevinoficial?si=IH7AO9AXfvNA6St2" target="_blank" rel="noopener noreferrer" aria-label="YouTube Oficial do MC Kevin">
           <i class="fab fa-youtube"></i>
           <span>YouTube</span>
         </a>
-        <a class="social-btn instagram" href="https://www.instagram.com/mckevingomes/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <a class="social-btn instagram" href="https://www.instagram.com/mckevingomes/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Oficial do MC Kevin">
           <i class="fab fa-instagram"></i>
           <span>Instagram</span>
         </a>
-        <a class="social-btn spotify" href="https://open.spotify.com/intl-pt/artist/5pBMkZNIlbGTH3hrsQJqAa?si=EATrZxtQQS-b1zbYD4LMwg" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+        <a class="social-btn spotify" href="https://open.spotify.com/intl-pt/artist/5pBMkZNIlbGTH3hrsQJqAa?si=EATrZxtQQS-b1zbYD4LMwg" target="_blank" rel="noopener noreferrer" aria-label="Spotify do MC Kevin">
           <i class="fab fa-spotify"></i>
           <span>Spotify</span>
         </a>
       </div>
 
       <div class="footer-divider"></div>
-      <p class="footer-copy">&copy; 2026 Allan Santana.</p>
+      
+      <div class="footer-copy-container">
+        <p class="footer-copy">&copy; 2026 Allan Santana.</p>
+        <p class="footer-subcopy">Todos os direitos das imagens e mídias pertencem aos seus respectivos proprietários.</p>
+      </div>
     </div>
   </footer>
 
