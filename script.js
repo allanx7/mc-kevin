@@ -165,10 +165,13 @@ document.addEventListener("DOMContentLoaded", () => {
       if (thumb.classList.contains("active")) return;
 
       // Extract new content attributes
-      const newSrc = thumb.getAttribute("data-img");
+      const newSrc = thumb.dataset.img || thumb.getAttribute("data-img");
       const newTag = thumb.getAttribute("data-tag");
       const newCaption = thumb.getAttribute("data-caption");
       const newAlt = thumb.querySelector("img").getAttribute("alt");
+
+      // Debug: log what's being applied for troubleshooting
+      console.debug("changeSpotlight: index=", index, "newSrc=", newSrc, "newAlt=", newAlt);
 
       // 1. Remove active states
       thumbs.forEach((t) => t.classList.remove("active"));
@@ -184,6 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Change content when image is invisible
         spotlightImage.src = newSrc;
         spotlightImage.alt = newAlt;
+        console.debug("spotlightImage.src set to:", spotlightImage.src);
         
         if (spotlightTag) spotlightTag.textContent = newTag;
         if (spotlightCaption) spotlightCaption.textContent = newCaption;
@@ -197,7 +201,8 @@ document.addEventListener("DOMContentLoaded", () => {
     thumbs.forEach((thumb, index) => {
       thumb.addEventListener("click", () => {
         changeSpotlight(thumb, index);
-        resetAutoplay();
+        // User interaction: stop autoplay so chosen slide remains
+        stopAutoplay();
       });
 
       // Keyboard space/enter accessibility
@@ -205,7 +210,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
           changeSpotlight(thumb, index);
-          resetAutoplay();
+          // Stop autoplay after keyboard interaction as well
+          stopAutoplay();
         }
       });
     });
